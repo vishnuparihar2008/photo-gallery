@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 async function connectDB() {
-  DB_URI = process.env.DATABASE_URI;
+  const DB_URI = process.env.DATABASE_URI;
   if (!DB_URI) {
     throw new Error("DATABASE_URI is not valid.");
   }
